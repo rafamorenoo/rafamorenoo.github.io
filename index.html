@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Página con Favicon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rafa Canal</title>
 
-  <!-- Favicon clásico -->
-  <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" />
+  <!-- Favicon personalizado -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <!-- PNG favicon para navegadores modernos -->
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon2.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon2.png" />
+  <!-- RSS feed -->
+  <link rel="alternate" type="application/rss+xml" title="RSS de Rafa" href="/rss.xml">
 
-  <!-- Icono para iOS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon2.png" />
-
-  <!-- Safari pinned tab (icono SVG) -->
-  <link rel="mask-icon" href="favicon2.png" color="#5bbad5" />
-
-  <!-- Meta color para navegadores -->
-  <meta name="theme-color" content="#ffffff" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      color: #333;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #007acc;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .entry {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, esta es mi página con favicon funcionando</h1>
-  <p>Sube este archivo y los iconos a GitHub Pages y verás el favicon en la pestaña.</p>
+
+  <h1>Rafa Canal</h1>
+  <p>Bienvenido a mi sitio personal. Aquí comparto enlaces y noticias que me interesan.</p>
+
+  <div class="entry">
+    <h2><a href="https://systemweakness.com/how-ssrf-vulnerabilities-are-exploited-to-steal-aws-credentials-and-how-to-defend-against-it-c41f2a30a8f7" target="_blank">¿Qué es SSRF?</a></h2>
+    <p>
+      <img src="https://www.hacksplaining.com/img/illustrations/ssrf.png" alt="SSRF" width="600"><br>
+      Cuando ocurre este bug y cómo las vulnerabilidades SSRF son explotadas para acceder a credenciales de AWS.
+    </p>
+  </div>
+
+  <div class="entry">
+    <h2><a href="https://github.com/devanshbatham/ParamSpider" target="_blank">Paramspider</a></h2>
+    <p>
+      <img src="https://raw.githubusercontent.com/0xKayala/ParamSpider/master/static/banner.PNG" alt="ParamSpider" width="600"><br>
+      Herramienta para automatizar el descubrimiento de parámetros web vulnerables.
+    </p>
+  </div>
+
+  <footer>
+    <p><a href="/rss.xml">📰 RSS Feed</a></p>
+  </footer>
+
 </body>
 </html>
